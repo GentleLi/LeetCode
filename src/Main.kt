@@ -8,7 +8,9 @@ class Main {
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
-            println("Hello World")
+
+            val cbrt = Math.cbrt(0.1)
+            println("cbrt : " + cbrt)
             val student = Student()
             student.say()
 
@@ -17,10 +19,10 @@ class Main {
 
             printArray(arr)
             println("bubble sort operation ")
-
-            BubbleSort.sort(arr)
-
+//            BubbleSort.sort(arr)
+            QuickSort.sort(arr, 0, arr.size-1)
             printArray(arr)
+
 
         }
     }

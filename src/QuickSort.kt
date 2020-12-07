@@ -28,7 +28,7 @@ object QuickSort {
                 start++
             }
             //注：当start==end后还会比较一次 这次交换可以将 pivot 值放在正确的位置上
-            if (start < end) {
+            if (start <= end) {
                 var temp = array[start]
                 array[start] = array[end]
                 array[end] = temp
